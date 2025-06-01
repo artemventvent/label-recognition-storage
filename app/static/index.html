@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Label Recognition</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div id="main-container">
+    <aside id="label-sidebar" class="visible">
+      <ul id="label-list"></ul>
+    </aside>
+
+    <button id="toggle-sidebar" class="expanded">&laquo;</button>
+    <button id="theme-toggle">🌙</button>
+
+    <div id="center-block">
+      <h1 id="title">Label Recognition</h1>
+      <form id="label-form">
+        <input type="text" id="name" placeholder="Название этикетки" required>
+        <input type="text" id="confidence" placeholder="Уверенность распознования (0.95)" required>
+        <input type="file" id="json-file" accept=".json" style="display:none" />
+        <button type="button" id="json-file-button" title="Загрузить JSON файл">📁</button>
+        <button type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
+<script src="/static/script.js"></script>
+</body>
+</html>
