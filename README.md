@@ -7,7 +7,6 @@ This project is for managing labels using FastAPI, SQLite, and a simple web inte
 ✅ Upload labels from a JSON file  
 ✅ Switch between light and dark themes
 
----
 ## 🐳 Run with Docker
 
 If you have Docker installed:
